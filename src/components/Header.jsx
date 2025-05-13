@@ -1,18 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import NavMenu from './NavMenu';
 
-const Header = () => (
-  <header className="header">
-    <div className="logo">AESOP</div>
-    <nav className="nav-menu">
-      <ul>
-        <li><Link to="/">首頁</Link></li>
-        <li><Link to="/products">產品</Link></li>
-        <li><Link to="/about">品牌理念</Link></li>
-        <li><Link to="/contact">聯絡我們</Link></li>
-      </ul>
-    </nav>
-  </header>
-);
+const Header = () => {
+  return (
+    <header className="header">
+      <div className="logo">TINA</div>
+      <NavMenu />
+    </header>
+  );
+};
 
 export default Header;
