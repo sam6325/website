@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Products from './pages/Products';
+import routes from './routes'; // 引用路由配置
 import './styles/global.css';
 
 function App() {
-return (
+  return (
     <Router>
       <Header />
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-        </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            {routes.map((route, index) => (
+              <Route key={index} path={route.path} element={route.element} />
+            ))}
+          </Routes>
+        </Suspense>
       </main>
       <Footer />
     </Router>
