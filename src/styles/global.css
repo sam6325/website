@@ -74,6 +74,20 @@ main {
   width: 100%;
 }
 
+.nav-menu .nav-button {
+  background: none;
+  border: none;
+  color: #111;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  font-family: inherit;
+}
+
+.nav-menu .nav-button:hover {
+  opacity: 0.6;
+}
+
 /* ===== Hero 區塊 ===== */
 .hero {
   padding: 6rem 2rem;
@@ -399,3 +413,75 @@ main {
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+/* global.css */
+.auth-page {
+  max-width: 400px;
+  margin: 4rem auto;
+  background-color: #f9f6ef;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.auth-page input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.auth-page button {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.auth-page button:hover {
+  background-color: #555;
+}
+
+.account-page {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+

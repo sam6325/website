@@ -1,0 +1,250 @@
+.account-container {
+  max-width: 600px;
+  margin: 4rem auto;
+  background-color: #ebeae6;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.account-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #2c2c2c;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.avatar-preview {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.avatar-preview img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #111;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #111;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+}
+
+.avatar-wrapper {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar-img,
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: #999;
+  border: 2px dashed #ccc;
+  transition: all 0.3s ease;
+}
+
+.avatar-img {
+  border: 2px solid #aaa;
+}
+
+.avatar-placeholder:hover {
+  background-color: #e8e8e8;
+  color: #333;
+}
+
+.remove-avatar {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #d33;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-info {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.avatar-error {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #b30000;
+  margin-top: 0.5rem;
+}
+
+/* 用來控制會員中心下拉選單 */
+.user-menu {
+  position: relative;
+}
+
+/* .user-menu-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+} */
+
+.user-menu-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+  position: relative;
+}
+
+.user-menu-btn:hover{
+  opacity: 0.6;
+}
+
+.user-menu-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #111;
+  transition: width 0.3s ease;
+}
+
+.user-menu-btn:hover::after {
+  width: 100%;
+}
+
+.user-menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 10;
+}
+
+.user-menu-dropdown ul {
+  padding: 0;
+  display: block;
+  margin: 0;
+  list-style: none;
+}
+
+.user-menu-dropdown li {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.user-menu-dropdown li:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-link-button {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-link-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #111;
+  transition: width 0.3s ease;
+}
+
+.nav-link-button:hover::after {
+  width: 100%;
+}
+
+.nav-link-button:hover {
+  opacity: 0.8;
+}
+
+.user-menu-dropdown a,
+.user-menu-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #333;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.user-menu-dropdown a:hover,
+.user-menu-dropdown button:hover {
+  background-color: #f5f5f5;
+}
